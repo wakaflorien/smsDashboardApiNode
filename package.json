@@ -18,8 +18,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "dev": "nodemon app.js",
+    "start": "node api.js && node app.js",
+    "dev": "node api.js && nodemon app.js",
     "docker:build": "docker compose up --build ",
     "docker:watch": "docker compose up --watch",
     "docker:down": "docker compose down"
